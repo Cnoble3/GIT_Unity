@@ -1,15 +1,15 @@
-﻿using UnityEngine;
+﻿// Corey Noble
+using UnityEngine;
 using System.Collections;
-
-public class BeginState : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+using Assets.Code.Interfaces;
+namespace Assets.Code.States {
+	public class BeginState : IStateBase {
+		public BeginState() {
+			Debug.Log("Constructing BeginState");
+		}
+		public void StateUpdate() {
+		}
+		public void ShowIt() {
+		}
 	}
 }
